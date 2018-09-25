@@ -1,0 +1,4 @@
+Rocket.toml
+/target
+.env
+**/*.rs.bk
