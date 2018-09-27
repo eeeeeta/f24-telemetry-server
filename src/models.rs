@@ -44,4 +44,6 @@ pub struct DataRecord {
     pub accel: Option<f32>,
     pub pressure1: Option<f32>,
     pub pressure2: Option<f32>,
+    pub rpm1: Option<f32>,
+    pub rpm2: Option<f32>,
 }

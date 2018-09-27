@@ -33,6 +33,8 @@ table! {
         accel -> Nullable<Float4>,
         pressure1 -> Nullable<Float4>,
         pressure2 -> Nullable<Float4>,
+        rpm1 -> Nullable<Float4>,
+        rpm2 -> Nullable<Float4>,
     }
 }
 

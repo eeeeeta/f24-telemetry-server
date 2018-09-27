@@ -32,6 +32,10 @@ pub struct UploadBody {
     pub pressure1: Option<f32>,
     #[serde(default)]
     pub pressure2: Option<f32>,
+    #[serde(default)]
+    pub rpm1: Option<f32>,
+    #[serde(default)]
+    pub rpm2: Option<f32>,
 }
 impl UploadBody {
     pub fn as_data_record(self) -> DataRecord {
@@ -51,6 +55,8 @@ impl UploadBody {
             accel: self.accel,
             pressure1: self.pressure1,
             pressure2: self.pressure2,
+            rpm1: self.pressure2,
+            rpm2: self.pressure2,
         }
     }
 }

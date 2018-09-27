@@ -1,0 +1,2 @@
+ALTER TABLE data_records ADD COLUMN rpm1 REAL;
+ALTER TABLE data_records ADD COLUMN rpm2 REAL;
