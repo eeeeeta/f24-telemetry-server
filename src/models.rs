@@ -49,5 +49,6 @@ pub struct DataRecord {
     pub motor_voltage: Option<f32>,
     pub motor_current: Option<f32>,
     pub gps_track: Option<f32>,
-    pub voltage2: Option<f32>,
+    pub battery_voltage_1: Option<f32>,
+    pub battery_voltage_2: Option<f32>,
 }

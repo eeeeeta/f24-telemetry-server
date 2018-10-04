@@ -38,7 +38,8 @@ table! {
         motor_voltage -> Nullable<Float4>,
         motor_current -> Nullable<Float4>,
         gps_track -> Nullable<Float4>,
-        voltage2 -> Nullable<Float4>,
+        battery_voltage_1 -> Nullable<Float4>,
+        battery_voltage_2 -> Nullable<Float4>,
     }
 }
 

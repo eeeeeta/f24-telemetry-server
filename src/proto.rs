@@ -43,7 +43,9 @@ pub struct UploadBody {
     #[serde(default)]
     pub gps_track: Option<f32>,
     #[serde(default)]
-    pub voltage2: Option<f32>,
+    pub battery_voltage_1: Option<f32>,
+    #[serde(default)]
+    pub battery_voltage_2: Option<f32>,
 }
 impl UploadBody {
     pub fn as_data_record(self) -> DataRecord {
@@ -68,7 +70,8 @@ impl UploadBody {
             motor_voltage: self.motor_voltage,
             motor_current: self.motor_current,
             gps_track: self.gps_track,
-            voltage2: self.voltage2,
+            battery_voltage_1: self.battery_voltage_1,
+            battery_voltage_2: self.battery_voltage_2,
         }
     }
 }
