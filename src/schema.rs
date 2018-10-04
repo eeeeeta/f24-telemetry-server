@@ -35,6 +35,9 @@ table! {
         pressure2 -> Nullable<Float4>,
         rpm1 -> Nullable<Float4>,
         rpm2 -> Nullable<Float4>,
+        motor_voltage -> Nullable<Float4>,
+        motor_current -> Nullable<Float4>,
+        gps_track -> Nullable<Float4>,
     }
 }
 

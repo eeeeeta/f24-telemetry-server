@@ -36,6 +36,12 @@ pub struct UploadBody {
     pub rpm1: Option<f32>,
     #[serde(default)]
     pub rpm2: Option<f32>,
+    #[serde(default)]
+    pub motor_voltage: Option<f32>,
+    #[serde(default)]
+    pub motor_current: Option<f32>,
+    #[serde(default)]
+    pub gps_track: Option<f32>,
 }
 impl UploadBody {
     pub fn as_data_record(self) -> DataRecord {
@@ -55,8 +61,11 @@ impl UploadBody {
             accel: self.accel,
             pressure1: self.pressure1,
             pressure2: self.pressure2,
-            rpm1: self.pressure2,
-            rpm2: self.pressure2,
+            rpm1: self.rpm1,
+            rpm2: self.rpm2,
+            motor_voltage: self.motor_voltage,
+            motor_current: self.motor_current,
+            gps_track: self.gps_track,
         }
     }
 }

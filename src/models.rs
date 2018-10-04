@@ -46,4 +46,7 @@ pub struct DataRecord {
     pub pressure2: Option<f32>,
     pub rpm1: Option<f32>,
     pub rpm2: Option<f32>,
+    pub motor_voltage: Option<f32>,
+    pub motor_current: Option<f32>,
+    pub gps_track: Option<f32>,
 }
